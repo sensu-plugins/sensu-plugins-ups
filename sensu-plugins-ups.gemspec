@@ -4,9 +4,9 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'date'
 
 if RUBY_VERSION < '2.0.0'
-  require 'sensu-plugins-ups-checks'
+  require 'sensu-plugins-ups'
 else
-  require_relative 'lib/sensu-plugins-ups-checks'
+  require_relative 'lib/sensu-plugins-ups'
 end
 
 pvt_key = '~/.ssh/gem-private_key.pem'
@@ -15,11 +15,11 @@ Gem::Specification.new do |s|
   s.authors                = ['Sensu-Plugins and contributors']
   s.cert_chain             = ['certs/sensu-plugins.pem']
   s.date                   = Date.today.to_s
-  s.description            = 'Sensu plugins for ups checks'
+  s.description            = 'Sensu plugins for UPS units'
   s.email                  = '<sensu-users@googlegroups.com>'
   s.executables            = Dir.glob('bin/**/*.rb').map { |file| File.basename(file) }
   s.files                  = Dir.glob('{bin,lib}/**/*') + %w(LICENSE README.md CHANGELOG.md)
-  s.homepage               = 'https://github.com/sensu-plugins/sensu-plugins-ups-checks'
+  s.homepage               = 'https://github.com/sensu-plugins/sensu-plugins-ups'
   s.license                = 'MIT'
   s.metadata               = { 'maintainer'         => '@tas50',
                                'development_status' => 'active',
@@ -27,15 +27,15 @@ Gem::Specification.new do |s|
                                'release_draft'      => 'false',
                                'release_prerelease' => 'false'
                               }
-  s.name                   = 'sensu-plugins-ups-checks'
+  s.name                   = 'sensu-plugins-ups'
   s.platform               = Gem::Platform::RUBY
   s.post_install_message   = 'You can use the embedded Ruby by setting EMBEDDED_RUBY=true in /etc/default/sensu'
   s.require_paths          = ['lib']
   s.required_ruby_version  = '>= 1.9.3'
   s.signing_key            = File.expand_path(pvt_key) if $PROGRAM_NAME =~ /gem\z/
-  s.summary                = 'Sensu plugins for ups checks'
+  s.summary                = 'Sensu plugins for UPS units'
   s.test_files             = s.files.grep(%r{^(test|spec|features)/})
-  s.version                = SensuPluginsUpsChecks::Version::VER_STRING
+  s.version                = SensuPluginsUps::Version::VER_STRING
 
   s.add_runtime_dependency 'sensu-plugin',    '1.2.0'
 

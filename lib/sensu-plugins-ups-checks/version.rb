@@ -1,4 +1,4 @@
-module SensuPluginsUpsChecks
+module SensuPluginsUps
   module Version
     MAJOR = 0
     MINOR = 1

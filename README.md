@@ -5,7 +5,7 @@
 [![Test Coverage](https://codeclimate.com/github/sensu-plugins/sensu-plugins-ups/badges/coverage.svg)](https://codeclimate.com/github/sensu-plugins/sensu-plugins-ups)
 [![Dependency Status](https://gemnasium.com/sensu-plugins/sensu-plugins-ups.svg)](https://gemnasium.com/sensu-plugins/sensu-plugins-ups)
 ## Functionality
-c
+
 **metrics-nut**
 
 Polls metrics from NUT (http://www.networkupstools.org/) monitored UPS units

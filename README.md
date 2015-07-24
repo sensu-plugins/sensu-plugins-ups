@@ -6,11 +6,16 @@
 [![Dependency Status](https://gemnasium.com/sensu-plugins/sensu-plugins-ups.svg)](https://gemnasium.com/sensu-plugins/sensu-plugins-ups)
 ## Functionality
 
+**check-nut**
+
+Checks each NUT (http://www.networkupstools.org/) managed UPS unit for the "OL" status
+
 **metrics-nut**
 
 Polls metrics from NUT (http://www.networkupstools.org/) monitored UPS units
 
 ## Files
+ * bin/check-nut.rb
  * bin/metrics-nut.rb
 
 ## Installation

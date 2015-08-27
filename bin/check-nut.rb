@@ -40,10 +40,10 @@ class NutCheck < Sensu::Plugin::Check::CLI
       output = `upsc #{ups} 2> /dev/null`.split("\n")
       output.each do |line|
         next unless /ups.status: (.+)/ =~ line
-        if $1 == 'OL'
-          status['ok'][ups] = $1
+        if Regexp.last_match(1) == 'OL'
+          status['ok'][ups] = Regexp.last_match(1)
         else
-          status['critical'][ups] = $1
+          status['critical'][ups] = Regexp.last_match(1)
         end
         break
       end

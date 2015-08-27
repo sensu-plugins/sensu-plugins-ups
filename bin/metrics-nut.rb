@@ -46,17 +46,17 @@ class Nut < Sensu::Plugin::Metric::CLI::Graphite
       output.each do |line|
         case line
         when /battery.voltage: (.+)/
-          metrics["#{ups}"]['battery_voltage'] = $1
+          metrics["#{ups}"]['battery_voltage'] = Regexp.last_match(1)
         when /input.voltage: (.+)/
-          metrics["#{ups}"]['input_voltage'] = $1
+          metrics["#{ups}"]['input_voltage'] = Regexp.last_match(1)
         when /ups.temperature: (.+)/
-          metrics["#{ups}"]['temperature'] = $1 unless $1 == '0' # 0 means it's not supported
+          metrics["#{ups}"]['temperature'] = Regexp.last_match(1) unless Regexp.last_match(1) == '0' # 0 means it's not supported
         when /battery.charge: (.+)/
-          metrics["#{ups}"]['battery_charge'] = $1
+          metrics["#{ups}"]['battery_charge'] = Regexp.last_match(1)
         when /ups.load: (.+)/
-          metrics["#{ups}"]['load'] = $1
+          metrics["#{ups}"]['load'] = Regexp.last_match(1)
         when /ups.status: (.+)/
-          if $1 == 'OL'
+          if Regexp.last_match(1) == 'OL'
             metrics["#{ups}"]['on_battery'] = 0
           else
             metrics["#{ups}"]['on_battery'] = 1

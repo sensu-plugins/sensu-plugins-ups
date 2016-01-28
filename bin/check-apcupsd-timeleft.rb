@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 #
-#   check-apcupds-timeleft.rb
+#   check-apcupsd-timeleft.rb
 #
 # DESCRIPTION:
 #   Checks the battery time on a APC UPS using apcupsd <http://www.apcupsd.org>

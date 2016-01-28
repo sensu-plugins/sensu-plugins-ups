@@ -21,8 +21,8 @@ Polls metrics from NUT (http://www.networkupstools.org/) monitored UPS units
 ## Files
  * bin/check-nut.rb
  * bin/metrics-nut.rb
- * bin/check-apcupds-bcharge.rb
- * bin/check-apcupds-timeleft.rb
+ * bin/check-apcupsd-bcharge.rb
+ * bin/check-apcupsd-timeleft.rb
 
 ## Usage
 
@@ -37,12 +37,12 @@ Polls metrics from NUT (http://www.networkupstools.org/) monitored UPS units
 }
 ```
 
-**check-apcupds-bcharge**
+**check-apcupsd-bcharge**
 ```
 {
   "checks": {
-    "check-apcupds-bcharge": {
-      "command": "check-apcupds-bcharge.rb -w 80 -c 50"
+    "check-apcupsd-bcharge": {
+      "command": "check-apcupsd-bcharge.rb -w 80 -c 50"
     }
   }
 }

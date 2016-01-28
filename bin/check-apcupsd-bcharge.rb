@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 #
-#   check-apcupds-bcharge.rb
+#   check-apcupsd-bcharge.rb
 #
 # DESCRIPTION:
 #   Checks the battery charge level on a APC UPS using apcupsd <http://www.apcupsd.org>

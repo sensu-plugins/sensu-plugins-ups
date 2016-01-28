@@ -24,7 +24,7 @@ Polls metrics from NUT (http://www.networkupstools.org/) monitored UPS units
  * bin/check-apcupds-bcharge.rb
  * bin/check-apcupds-timeleft.rb
 
- ## Usage
+## Usage
 
 **check-apcupsd-timeleft**
 ```

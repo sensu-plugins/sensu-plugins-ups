@@ -54,4 +54,3 @@ Polls metrics from NUT (http://www.networkupstools.org/) monitored UPS units
 [Installation and Setup](http://sensu-plugins.io/docs/installation_instructions.html)
 
 ## Notes
-

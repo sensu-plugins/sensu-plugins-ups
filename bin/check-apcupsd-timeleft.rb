@@ -28,27 +28,26 @@
 require 'sensu-plugin/check/cli'
 
 class CheckApcupsd < Sensu::Plugin::Check::CLI
-
   option :warn,
-    short: '-w WARN',
-    long: '--warn WARN',
-    :proc => proc {|a| a.to_i },
-    default: 5,
-    description: 'Warn if battery time is less then arg'
+         short: '-w WARN',
+         long: '--warn WARN',
+         proc: proc { |a| a.to_i },
+         default: 5,
+         description: 'Warn if battery time is less then arg'
 
   option :crit,
-    short: '-c CRIT',
-    long: '--critical CRIT',
-    :proc => proc {|a| a.to_i },
-    default: 2,
-    description: 'Critical if battery time is less then arg'
+         short: '-c CRIT',
+         long: '--critical CRIT',
+         proc: proc { |a| a.to_i },
+         default: 2,
+         description: 'Critical if battery time is less then arg'
 
   def run
     # Path to apcaccess
     apcaccess = '/sbin/apcaccess'
-    results = (%x[#{apcaccess} status | grep -i timeleft | awk '{print $3}' | awk -F'.' '{print $1}' ]).to_i    
+    results = (`#{apcaccess} status | grep -i timeleft | awk '{print $3}' | awk -F'.' '{print $1}'`).to_i
 
-    if results <= config[:warn] and results > config[:crit]
+    if results <= config[:warn] && results > config[:crit]
       warning "UPS Battery time is #{results} minutes"
     elsif results < config[:crit]
       critical "UPS Battery time is #{results} minutes"

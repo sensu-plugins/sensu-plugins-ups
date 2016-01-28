@@ -14,9 +14,40 @@ Checks each NUT (http://www.networkupstools.org/) managed UPS unit for the "OL" 
 
 Polls metrics from NUT (http://www.networkupstools.org/) monitored UPS units
 
+ **apcupsd checks**
+
+ Uses apcupsd (http://www.apcupsd.org/) to check battery time and levels
+
 ## Files
  * bin/check-nut.rb
  * bin/metrics-nut.rb
+ * bin/check-apcupsd-bcharge.rb
+ * bin/check-apcupsd-timeleft.rb
+
+## Usage
+
+**check-apcupsd-timeleft**
+```
+{
+  "checks": {
+    "check-apcupsd-timeleft": {
+      "command": "check-apcupsd-timeleft.rb -w 5 -c 1"
+    }
+  }
+}
+```
+
+**check-apcupsd-bcharge**
+```
+{
+  "checks": {
+    "check-apcupsd-bcharge": {
+      "command": "check-apcupsd-bcharge.rb -w 80 -c 50"
+    }
+  }
+}
+```
+
 
 ## Installation
 

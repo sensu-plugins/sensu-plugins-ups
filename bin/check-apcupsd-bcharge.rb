@@ -45,7 +45,7 @@ class CheckApcupsd < Sensu::Plugin::Check::CLI
   def run
     # Path to apcaccess
     apcaccess = '/sbin/apcaccess'
-    results = (`#{apcaccess} status | grep -i bcharge | awk '{print $3}' | awk -F'.' '{print $1}'`).to_i
+    results = `#{apcaccess} status | grep -i bcharge | awk '{print $3}' | awk -F'.' '{print $1}'`.to_i
 
     if results < config[:crit]
       critical "UPS Battery Charge is at #{results}%"

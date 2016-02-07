@@ -41,26 +41,26 @@ class Nut < Sensu::Plugin::Metric::CLI::Graphite
 
     metrics = {}
     instances.each do |ups|
-      metrics["#{ups}"] = {}
+      metrics[ups.to_s] = {}
       output = `upsc #{ups}`.split("\n")
       output.each do |line|
         case line
         when /battery.voltage: (.+)/
-          metrics["#{ups}"]['battery_voltage'] = Regexp.last_match(1)
+          metrics[ups.to_s]['battery_voltage'] = Regexp.last_match(1)
         when /input.voltage: (.+)/
-          metrics["#{ups}"]['input_voltage'] = Regexp.last_match(1)
+          metrics[ups.to_s]['input_voltage'] = Regexp.last_match(1)
         when /ups.temperature: (.+)/
-          metrics["#{ups}"]['temperature'] = Regexp.last_match(1) unless Regexp.last_match(1) == '0' # 0 means it's not supported
+          metrics[ups.to_s]['temperature'] = Regexp.last_match(1) unless Regexp.last_match(1) == '0' # 0 means it's not supported
         when /battery.charge: (.+)/
-          metrics["#{ups}"]['battery_charge'] = Regexp.last_match(1)
+          metrics[ups.to_s]['battery_charge'] = Regexp.last_match(1)
         when /ups.load: (.+)/
-          metrics["#{ups}"]['load'] = Regexp.last_match(1)
+          metrics[ups.to_s]['load'] = Regexp.last_match(1)
         when /ups.status: (.+)/
-          if Regexp.last_match(1) == 'OL'
-            metrics["#{ups}"]['on_battery'] = 0
-          else
-            metrics["#{ups}"]['on_battery'] = 1
-          end
+          metrics[ups.to_s]['on_battery'] = if Regexp.last_match(1) == 'OL'
+                                              0
+                                            else
+                                              1
+                                            end
         end
       end
     end

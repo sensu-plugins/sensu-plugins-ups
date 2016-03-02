@@ -1,4 +1,3 @@
-
 require 'bundler/gem_tasks'
 require 'github/markup'
 require 'redcarpet'
@@ -30,12 +29,12 @@ end
 
 desc 'Make all plugins executable'
 task :make_bin_executable do
-  `chmod -R +x bin/*.rb`
+  `chmod -R +x bin/*`
 end
 
 desc 'Test for binstubs'
 task :check_binstubs do
-  bin_list = Gem::Specification.load('sensu-plugins-ups.gemspec').executables
+  bin_list = Gem::Specification.load('sensu-plugins-ansible.gemspec').executables
   bin_list.each do |b|
     `which #{ b }`
     unless $CHILD_STATUS.success?

@@ -1,9 +1,6 @@
 language: ruby
 cache:
 - bundler
-before_install:
-- openssl aes-256-cbc -K $encrypted_74682d263f92_key -iv $encrypted_74682d263f92_iv
-  -in certs/pvt_key -out certs/gem-private_key.pem -d
 install:
 - bundle install
 rvm:

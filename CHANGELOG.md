@@ -14,6 +14,5 @@ This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachang
 - Apcupsd checks for battery time and levels
 - initial release of this sensu plugin repo
 
-
-: https://github.com/sensu-plugins/sensu-plugins-couchdb/compare/0.1.0...HEAD
+[Unreleased]: https://github.com/sensu-plugins/sensu-plugins-ups/compare/0.1.1...HEAD
 [0.1.1]: https://github.com/sensu-plugins/sensu-plugins-ups/compare/0.1.1...0.1.1

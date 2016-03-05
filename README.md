@@ -4,6 +4,7 @@
 [![Code Climate](https://codeclimate.com/github/sensu-plugins/sensu-plugins-ups/badges/gpa.svg)](https://codeclimate.com/github/sensu-plugins/sensu-plugins-ups)
 [![Test Coverage](https://codeclimate.com/github/sensu-plugins/sensu-plugins-ups/badges/coverage.svg)](https://codeclimate.com/github/sensu-plugins/sensu-plugins-ups)
 [![Dependency Status](https://gemnasium.com/sensu-plugins/sensu-plugins-ups.svg)](https://gemnasium.com/sensu-plugins/sensu-plugins-ups)
+
 ## Functionality
 
 **check-nut**

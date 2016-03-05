@@ -21,13 +21,13 @@ script:
 deploy:
   provider: rubygems
   api_key:
-    secure: eJjJLbedbEx7Q863NmHxRoiQoNMX6VFc9lg+K+N2Dj7RiaseJY/dH4m8MslKRgAPQ2F0oR21IHTU4pdSGpDcO9fmXcUyQHS4a5aRCGwdO/AnR8u0NflSmtXcQxbpygqaPQeeqgzrGwfY6frJipJ/2UpvkxHWVHT8ZQxxm42iQlP/c7O/PoJjzwcgAsEeiFpuh0vfrNI5E8aKkll95hKnDqFPbwBtO9quJy4bOBtx4tJdARzUXDSREOG0Vd3l3RH3tDjp+JGobfcHC5uqShVy1Ix+0V/9h+cLkSTt8FbCzcAt3dZoj18Wy+VhpmQh4/TF3tOyqqsF/wWHMfXqC/b14ADfGkHAkwz9zt3jTG3XKz22qVoOuuhnU09bPT6aoIfTA/etoOrqTqWaEjDum1PoFrIwKY7lPEEKQkcnV3fOEq2iB9z6y7mAEpTkcYcFqNh044ltiBpa292Grl60OMagDSM13VclnbddPeXe71oDV2Or00E8GH4ZVmeYGM4zJBG6WFI8tAvgdVRWnK0MFgvnSZLZFDvVv5JAGsEarBpfme4cOaQ0l9zbY6xj+Az21RKw4OjqbpxJHWiCvqxxTOZRX0DL7jqbdh09tJBoK2M7j6KQOnW7kXHdSqYH6fTpneiTLnrTpJQNJpFHCch7QNbHa2GOwlAgW0yCNnM1fbdTeGY=
+    secure: UzRAUxX2dQdsvqlO8w2T6TFv/FWch6V5a0mQ66MvF0m4q4ipT0vV5wL941+dcB+8RoDMxRsa3m20SFxe5HO5yYGHuNVj+2up9sCr0/9q0gkK8BSehUbq38DcdG14RRFKzNA2OB52BgXzmJ2JnmFtz8Ehvx61Z1yrsMY3dsap1L2Pnv7Indh8OGh8dST82zmCwM9n7+d5g8XwaeHlRo38rSUqcWfEBOD0X77Bo7g1ezOxG1jxkIExUMWuCyz4CugVzUQy3ugJ/45QRkcBnitKs1jhsL252vkKBv/CUWA+tUUbvbn892eCFODLgrbA7KcdWoBVHkYYLbGUE7mf/nqfMQlxFCkp6Zb88VqFAQHWCusGyhnfO6rJ6SbuzvkkDoQcidBFsnQMtWSFltQHo7mjpiK0IOLr5yjR7UuwSAXAuMMB93HdGv9eah7kWJHliGFwuHs1/xotK4geGSdtZEvfbTRuVNoMIg0uge0zjIB67wdGd9qdt6l6mgEGDGtXcE+KkLBBrXlGbOCj1NHjjU2a1S5MvJiQ3bNdxTe+leUC2PegsABahspAwYPAxI1SYjVmlGw47h7JQG9Vh3KPiBXZK5lgONLss6GCqzbUrFuE3JjgKQ7S/3d6WhJoFcs9WaNBhxRXbNJKf5LDiRQaLrbU46ef3JsSiYNbI6tULTdlQi8=
   gem: sensu-plugins-ups
   on:
-    tags: true
-    repo: sensu-plugins/sensu-plugins-ups
+    ags: true
     all_branches: true
     rvm: 1.9.3
     rvm: 2.0
     rvm: 2.1
     rvm: 2.2
+    repo: sensu-plugins/sensu-plugins-ups

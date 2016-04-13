@@ -24,7 +24,7 @@ deploy:
     secure: UzRAUxX2dQdsvqlO8w2T6TFv/FWch6V5a0mQ66MvF0m4q4ipT0vV5wL941+dcB+8RoDMxRsa3m20SFxe5HO5yYGHuNVj+2up9sCr0/9q0gkK8BSehUbq38DcdG14RRFKzNA2OB52BgXzmJ2JnmFtz8Ehvx61Z1yrsMY3dsap1L2Pnv7Indh8OGh8dST82zmCwM9n7+d5g8XwaeHlRo38rSUqcWfEBOD0X77Bo7g1ezOxG1jxkIExUMWuCyz4CugVzUQy3ugJ/45QRkcBnitKs1jhsL252vkKBv/CUWA+tUUbvbn892eCFODLgrbA7KcdWoBVHkYYLbGUE7mf/nqfMQlxFCkp6Zb88VqFAQHWCusGyhnfO6rJ6SbuzvkkDoQcidBFsnQMtWSFltQHo7mjpiK0IOLr5yjR7UuwSAXAuMMB93HdGv9eah7kWJHliGFwuHs1/xotK4geGSdtZEvfbTRuVNoMIg0uge0zjIB67wdGd9qdt6l6mgEGDGtXcE+KkLBBrXlGbOCj1NHjjU2a1S5MvJiQ3bNdxTe+leUC2PegsABahspAwYPAxI1SYjVmlGw47h7JQG9Vh3KPiBXZK5lgONLss6GCqzbUrFuE3JjgKQ7S/3d6WhJoFcs9WaNBhxRXbNJKf5LDiRQaLrbU46ef3JsSiYNbI6tULTdlQi8=
   gem: sensu-plugins-ups
   on:
-    ags: true
+    tags: true
     all_branches: true
     rvm: 1.9.3
     rvm: 2.0

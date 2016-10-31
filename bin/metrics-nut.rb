@@ -37,12 +37,12 @@ class Nut < Sensu::Plugin::Metric::CLI::Graphite
          default: "#{Socket.gethostname}.ups"
 
   def run
-    instances = `upsc -l`.split("\n")
+    instances = `upsc -l 2>/dev/null`.split("\n")
 
     metrics = {}
     instances.each do |ups|
       metrics[ups.to_s] = {}
-      output = `upsc #{ups}`.split("\n")
+      output = `upsc #{ups} 2>/dev/null`.split("\n")
       output.each do |line|
         case line
         when /battery.voltage: (.+)/

@@ -13,6 +13,9 @@ This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachang
 ### Changed
 - Update to rubocop 0.40 and cleanup
 
+### Fixed
+- metrics-nut.rb: exclude stderr to remove "Init SSL without certificate database" messages from the output
+
 ## [0.1.1] - 2016-02-28
 ### Added
 - new certs

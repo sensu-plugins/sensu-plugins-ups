@@ -4,6 +4,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachangelog.com/)
 
 ## Unreleased
+
+## [1.0.0] - 2016-10-31
 ### Added
 - Ruby 2.3.0 support
 
@@ -25,5 +27,6 @@ This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachang
 - Apcupsd checks for battery time and levels
 - initial release of this sensu plugin repo
 
-[Unreleased]: https://github.com/sensu-plugins/sensu-plugins-ups/compare/0.1.1...HEAD
+[Unreleased]: https://github.com/sensu-plugins/sensu-plugins-ups/compare/1.0.0...HEAD
+[1.0.0]: https://github.com/sensu-plugins/sensu-plugins-ups/compare/0.1.1...1.0.0
 [0.1.1]: https://github.com/sensu-plugins/sensu-plugins-ups/compare/0.1.1...0.1.1

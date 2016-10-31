@@ -52,7 +52,7 @@ Polls metrics from NUT (http://www.networkupstools.org/) monitored UPS units
 
 ## Installation
 
-To use the NUT checks, NUT must be installed and configured. See [this guide](http://bernaerts.dyndns.org/linux/75-debian/335-debian-wheezy-install-monitor-eaton-ups) for a guide to setting up NUT.
+To use the NUT checks, NUT must be installed and configured. See [this guide](http://bernaerts.dyndns.org/linux/75-debian/335-debian-wheezy-install-monitor-eaton-ups) to setting up NUT.
 
 [Installation and Setup](http://sensu-plugins.io/docs/installation_instructions.html)
 

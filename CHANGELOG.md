@@ -10,6 +10,9 @@ This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachang
 ### Removed
 - Ruby 1.9.3 support
 
+### Changed
+- Update to rubocop 0.40 and cleanup
+
 ## [0.1.1] - 2016-02-28
 ### Added
 - new certs

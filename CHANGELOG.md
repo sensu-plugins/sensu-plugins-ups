@@ -4,6 +4,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachangelog.com/)
 
 ## Unreleased
+### Breaking Change
+- Update `sensu-plugin` version from `2.x` to `'>= 2', '< 5'` for Sensu Go enablement.
+
 ### Added
 - Ruby 2.4.1 testing
 
